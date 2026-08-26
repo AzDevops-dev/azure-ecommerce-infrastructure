@@ -4,9 +4,16 @@
 
 This project demonstrates Infrastructure as Code (IaC) on Microsoft Azure using Terraform.
 
-The project is designed for a sample e-commerce application and follows a modular Terraform architecture. Reusable modules are used to provision core Azure infrastructure such as Resource Group, Virtual Network, Subnet, Network Interface, and Linux Virtual Machine.
+The infrastructure is designed for a sample e-commerce application and follows a modular Terraform architecture. Reusable modules are used to provision core Azure infrastructure including:
 
-The same modular approach can be extended across multiple environments such as Dev, QA, and Production.
+- Azure Resource Group
+- Virtual Network
+- Application Subnet
+- Network Security Group
+- Network Interface
+- Linux Virtual Machine
+
+The modular architecture can be extended across multiple environments such as Development, QA, and Production.
 
 ---
 
@@ -17,12 +24,12 @@ The same modular approach can be extended across multiple environments such as D
                              |
               +--------------+--------------+
               |              |              |
-        Resource Group    Network          VM
+        Resource Group    Network           VM
                              |
-                        Virtual Network
+                       Virtual Network
                              |
-                        Application Subnet
+                    Application Subnet
                              |
-                     Network Interface
+                    Network Interface
                              |
-                       Linux Virtual Machine
+                     Linux Virtual Machine
