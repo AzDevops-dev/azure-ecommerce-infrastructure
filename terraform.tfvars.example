@@ -1,0 +1,14 @@
+resource_group_name      = "rg-ecommerce-dev"
+location                 = "Central India"
+
+vnet_name                = "vnet-ecommerce-dev"
+vnet_address_space       = ["10.10.0.0/16"]
+subnet_name              = "snet-app"
+subnet_address_prefix   = "10.10.1.0/24"
+
+vm_name                  = "vm-ecommerce-dev"
+vm_size                  = "Standard_B2s_v2"
+admin_username           = "azureadmin"
+environment              = "dev"
+
+admin_ssh_key            = "YOUR_SSH_PUBLIC_KEY_HERE"
